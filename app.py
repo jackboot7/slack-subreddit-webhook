@@ -38,8 +38,8 @@ def get_random_image(sub):
         return "\n".join([item.link for item in sample])
 
 
-@route('/<sub>', method=["POST", "GET"])
-def index(sub):
+@route('outgoing/<sub>', method=["POST", "GET"])
+def outgoing(sub):
     """
         @SlackHQ's Outgoing Webhooks require a POST request which response should be a JSON obj with a 'text' field.
     """
