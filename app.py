@@ -5,6 +5,7 @@ import random
 import json
 import os
 
+import requests
 from bottle import route, run, request, template
 from imgurpython import ImgurClient
 
@@ -48,6 +49,20 @@ def outgoing(sub):
         return json.dumps(response)
     else:
         return template("<h1>Nothing to see here just yet!</h1>")
+
+
+@route('incoming/', method="POST")
+def incoming():
+    """
+        @SlacksHQ's Incoming Webhooks send a POST requests into a channel, private group, or DM.
+
+        This post receive a `text` field as part of its JSON payload, you must configure a Slash Command to
+        send the subreddit you need.
+    """
+    sub = request.forms.get("text")
+
+    payload = {"text": get_random_image(sub)}
+    requests.post(os.environ.get('SLACK_CHANNEL'), data=json.dumps(payload))
 
 
 if __name__ == "__main__":
