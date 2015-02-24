@@ -1,7 +1,7 @@
 Send subreddit's photos to a Slack Channel
 ==========================================
 
-This small `bottle.py` applications implements a Slack Outgoing Webhook to send a group (default 15) of photos to a SlackHQ channel.
+This small `bottle.py` application implements a Slack Outgoing Webhook to send a group (default 15) of photos to a SlackHQ channel.
 
 To use it, you'll need to have the Imgur API's credentials, which can be obtained here.
 
