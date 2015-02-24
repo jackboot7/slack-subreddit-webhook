@@ -5,6 +5,8 @@ This small `bottle.py` application implements a Slack Outgoing Webhook to send a
 
 To use it, you'll need to have the Imgur API's credentials, which can be obtained at `Imgur's API page`_.
 
+You'll have to add a Outgoing-Webhook to your Slack app, using your configured URL.
+
 Installation
 ============
 
