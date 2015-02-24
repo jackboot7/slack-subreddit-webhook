@@ -42,5 +42,5 @@ After following the Heroku documentation to push your code, you must add three E
     $ heroku config:set IMGUR_CLIENT_SECRET=<your Imgur client secret>
 
 
- .. _SlackHQ: https://slack.com/
- .. _Imgur's API page: https://api.imgur.com/ 
+.. _SlackHQ: https://slack.com/
+.. _Imgur's API page: https://api.imgur.com/ 
