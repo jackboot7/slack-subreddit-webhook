@@ -50,7 +50,7 @@ If you're using Incoming Webhooks with the `incoming` function, you must add:
 
 .. code:: bash
 
-    $ heroku config:set SLASH_CHANNEL=<your channel/private group/dm>
+    $ heroku config:set SLACK_CHANNEL=<your channel/private group/dm>
 
 
 
